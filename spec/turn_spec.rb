@@ -27,6 +27,9 @@ require './lib/card'
       turn = Turn.correct? = "correct"
       expect(turn.feedback).to eq("correct" || "incorrect")
     end
+
+
+    card = Card.new("Which planet is closest to the sun?", "Mercury", :STEM)
 end
 
 
